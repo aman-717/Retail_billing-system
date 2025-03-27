@@ -40,5 +40,5 @@ void Admin::dashboard() {
                 console.WriteLine("Invalid choice! Try again.");
                 console.SetColor(WHITE);
         }
-    } while (choice != 4);
+    } while (choice != 6);
 }
