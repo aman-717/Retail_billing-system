@@ -1,1 +1,4 @@
-z
+ID	Name	Price	Qty	Total
+2	Banana	150	4	600
+
+Grand Total: 600

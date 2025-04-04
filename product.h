@@ -31,6 +31,7 @@ public:
 
     static void addProduct();
     static void displayProducts();
+    static void removeExpiryProduct();
     static void deleteProduct();
     static void updateProductQuantity();
     static std::vector<Product> loadProducts();

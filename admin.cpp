@@ -10,7 +10,7 @@ void Admin::dashboard() {
         console.WriteLine("Admin Dashboard");
         console.SetColor(WHITE);
 
-        std::cout << "1. Add Product\n2. Display Products\n3. Delete Product\n4. Update Quantity \n5. Generate Bill \n6. Exit\n";
+        std::cout << "1. Add Product\n2. Display Products\n3. Delete Product\n4. Update Quantity \n5. Remove Expired Product \n6. Generate Bill \n7. Exit\n";
         std::cout << "Enter choice: ";
         std::cin >> choice;
 
@@ -28,9 +28,12 @@ void Admin::dashboard() {
                 Product::updateProductQuantity();
                 break;
             case 5:
-                Billing::generateBill();
+                Product::removeExpiryProduct();
                 break;
             case 6:
+                Billing::generateBill();
+                break;
+            case 7:
                 console.SetColor(GREEN);
                 console.WriteLine("Thank you for using the system!");
                 console.SetColor(WHITE);
